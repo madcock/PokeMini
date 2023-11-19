@@ -1265,7 +1265,7 @@ bool retro_load_game(const struct retro_game_info *game)
 	if (!passed)
 		abort();
 	
-#if (defined(_3DS) || defined(DINGUX))
+#if (defined(_3DS) || defined(DINGUX)) || defined(SF2000)
    PokeMini_VideoPalette_Init(PokeMini_BGR16, 0/* disable high colour*/);
 #else
    PokeMini_VideoPalette_Init(PokeMini_BGR16, 1/* enable high colour */);
